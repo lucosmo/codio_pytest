@@ -17,8 +17,9 @@ class Wallet(object):
 
       raise InsufficientAmount('Not enough available to spend {}'.format(amount)) 
 
-    self.balance -= amount 
-
+  #  self.balance -= amount 
+  #  changed to fail the test
+    self.balance -= amount + 1
   
 
   def add_cash(self, amount): 

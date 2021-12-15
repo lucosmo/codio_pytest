@@ -1,0 +1,16 @@
+...F.                                                                    [100%]
+=================================== FAILURES ===================================
+____________________________ test_wallet_spend_cash ____________________________
+
+    def test_wallet_spend_cash():
+    
+      wallet = Wallet(20)
+    
+      wallet.spend_cash(10)
+    
+>     assert wallet.balance == 10
+E     assert 9 == 10
+E      +  where 9 = <wallet.Wallet object at 0x7fb748132450>.balance
+
+test_wallet.py:39: AssertionError
+1 failed, 4 passed in 0.02 seconds
